@@ -1,7 +1,7 @@
 
 [![CI](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/ci.yml/badge.svg)](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/ci.yml)
 [![CD](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/cd.yml/badge.svg)](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/cd.yml)
-# Fixed-point solver
+# The SQUAREM accelerator for solving fixed-points
 squarem-JAXopt is a implementation of the SQUAREM accelerator for solving fixed-point equations, see [Du and Varadhan (2020)](https://doi.org/10.18637/jss.v092.i07). SQUAREM is implemented in JAX and [JAXopt](https://github.com/google/jaxopt). The later allow for implicit differentiation of the fixed-point.
 
 ## Installation
