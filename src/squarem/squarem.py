@@ -1,18 +1,4 @@
-# Copyright 2021 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     https://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-"""Implementation of the fixed point iteration method in JAX."""
+"""Implementation of the SQUAREM accelerator method in JAX."""
 
 from typing import Any
 from typing import Callable
@@ -34,21 +20,21 @@ class SquaremState(NamedTuple):
     iter_num: iteration number
     error: residuals of current estimate
     aux: auxiliary output of fixed_point_fun when has_aux=True
+    num_fun_eval: number of function evaluations
   """
-  iter_num: int
-  error: float
+  iter_num: jnp.ndarray|int
+  error: jnp.ndarray|float
   aux: Optional[Any] = None
-  num_fun_eval: int = 0
+  num_fun_eval: jnp.ndarray|int = jnp.asarray(0)
 
 
 @dataclass(eq=False)
 class SquaremAcceleration(base.IterativeSolver):
-  """Fixed point iteration method.
+  """SQUAREM accelerator method.
   Attributes:
     fixed_point_fun: a function ``fixed_point_fun(x, *args, **kwargs)``
       returning a pytree with the same structure and type as x
       The function should fulfill the Banach fixed-point theorem's assumptions.
-      Otherwise convergence is not guaranteed.
     maxiter: maximum number of iterations.
     tol: tolerance (stopping criterion)
     has_aux: wether fixed_point_fun returns additional data. (default: False)
@@ -122,10 +108,10 @@ class SquaremAcceleration(base.IterativeSolver):
 
   def update(self,
              params: Any,
-             state: NamedTuple,
+             state: SquaremState,
              *args,
              **kwargs) -> base.OptStep:
-    """Performs one iteration of the fixed point iteration method.
+    """Performs one iteration of the SQUAREM accelerator method.
     Args:
       params: pytree containing the parameters.
       state: named tuple containing the solver state.
@@ -141,7 +127,7 @@ class SquaremAcceleration(base.IterativeSolver):
     next_state = SquaremState(iter_num=state.iter_num + 1,
                               error=error,
                               aux=aux,
-                              num_fun_eval=state.num_fun_eval + 1)
+                              num_fun_eval=state.num_fun_eval + 3)
     
     if self.verbose:
       self.log_info(
