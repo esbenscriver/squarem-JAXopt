@@ -3,7 +3,7 @@ import jax.numpy as jnp
 from jax import random
 
 from jaxopt import FixedPointIteration, AndersonAcceleration
-from squarem import SquaremAcceleration
+from squarem_jaxopt import SquaremAcceleration
 
 # Increase precision to 64 bit
 jax.config.update("jax_enable_x64", True)

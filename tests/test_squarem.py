@@ -2,7 +2,7 @@ import jax
 import jax.numpy as jnp
 from jax import random
 
-from squarem import SquaremAcceleration
+from squarem_jaxopt import SquaremAcceleration
 
 import pytest
 
