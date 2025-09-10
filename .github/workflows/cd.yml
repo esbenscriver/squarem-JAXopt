@@ -15,7 +15,7 @@ env:
 jobs:
 
   details:
-    name: Extract Release Details
+    name: Extract release details
     runs-on: ubuntu-latest
     outputs:
       new_version: ${{ steps.release.outputs.new_version }}
@@ -70,7 +70,7 @@ jobs:
           fi
 
   build:
-    name: Build Project
+    name: Build project
     needs: [details, check_pypi]
     runs-on: ubuntu-latest
     steps:
