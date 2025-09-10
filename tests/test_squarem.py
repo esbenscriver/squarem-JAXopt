@@ -21,8 +21,7 @@ def test_solver(N: int, accelerator: str):
     b = random.uniform(random.PRNGKey(112), (1, 1))
 
     def fun(x: jnp.ndarray) -> jnp.ndarray:
-        y = a + x @ b
-        return y
+        return a + x @ b
 
     fxp = SquaremAcceleration(fixed_point_fun=fun)
     result = fxp.run(jnp.zeros_like(a))
