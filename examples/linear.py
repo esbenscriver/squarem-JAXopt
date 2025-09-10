@@ -13,9 +13,11 @@ N = 4
 a = random.uniform(random.PRNGKey(111), (N, 1))
 b = random.uniform(random.PRNGKey(112), (1, 1))
 
+
 def fun(x: jnp.ndarray) -> jnp.ndarray:
     y = a + x @ b
     return y
+
 
 fxp_none = FixedPointIteration(fixed_point_fun=fun, verbose=True)
 result_none = fxp_none.run(jnp.zeros_like(a))

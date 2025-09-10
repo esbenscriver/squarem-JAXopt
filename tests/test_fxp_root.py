@@ -10,6 +10,7 @@ import pytest
 # Increase precision to 64 bit
 jax.config.update("jax_enable_x64", True)
 
+
 def choose_solver(solver, fun):
     if solver == "None":
         return FixedPointIteration(fixed_point_fun=fun)
