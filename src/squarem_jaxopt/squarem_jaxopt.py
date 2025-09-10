@@ -1,4 +1,4 @@
-"""Implementation of the SQUAREM accelerator method in JAX."""
+"""Implementation of the SQUAREM accelerator method in JAXopt."""
 
 from typing import Any
 from typing import Callable
