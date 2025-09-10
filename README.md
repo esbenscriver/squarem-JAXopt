@@ -1,4 +1,5 @@
 
+[![PyPI version](https://img.shields.io/pypi/v/squarem-JAXopt.svg)](https://pypi.org/project/squarem-JAXopt/)
 [![CI](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/ci.yml/badge.svg)](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/ci.yml)
 [![CD](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/cd.yml/badge.svg)](https://github.com/esbenscriver/squarem-JAXopt/actions/workflows/cd.yml)
 # squarem-JAXopt
