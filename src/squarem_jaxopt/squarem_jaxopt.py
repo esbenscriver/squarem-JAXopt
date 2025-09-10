@@ -50,7 +50,7 @@ class SquaremAcceleration(base.IterativeSolver):
       jit: whether to JIT-compile the optimization loop (default: True).
       unroll: whether to unroll the optimization loop (default: "auto")
     References:
-      https://en.wikipedia.org/wiki/Fixed-point_iteration
+      https://doi.org/10.18637/jss.v092.i07
     """
 
     fixed_point_fun: Callable
