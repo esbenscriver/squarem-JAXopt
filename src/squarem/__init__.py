@@ -1,1 +1,1 @@
-from .squarem import SquaremAcceleration
+from .squarem import SquaremAcceleration as SquaremAcceleration
