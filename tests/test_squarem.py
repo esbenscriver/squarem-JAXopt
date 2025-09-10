@@ -11,12 +11,14 @@ jax.config.update("jax_enable_x64", True)
 
 
 @pytest.mark.parametrize(
-    "N, accelerator",
+    "N",
     [
-        (1000, "SQUAREM"),
+        (10),
+        (100),
+        (1000),
     ],
 )
-def test_solver(N: int, accelerator: str):
+def test_solver(N: int) -> None:
     a = random.uniform(random.PRNGKey(111), (N, 1))
     b = random.uniform(random.PRNGKey(112), (1, 1))
 
