@@ -9,7 +9,7 @@ on:
       - "[0-9]+.[0-9]+.[0-9]+rc[0-9]+"
 
 env:
-  PACKAGE_NAME: "fxp-jax"
+  PACKAGE_NAME: "squarem-JAXopt"
   OWNER: "esbenscriver"
 
 jobs:
@@ -49,7 +49,7 @@ jobs:
     steps:
       - name: Fetch information from PyPI
         run: |
-          response=$(curl -s https://pypi.org/pypi/${{ env.PACKAGE_NAME }}/json || echo "{}")
+          response=$(curl -s https://test.pypi.org/pypi/${{ env.PACKAGE_NAME }}/json || echo "{}")
           latest_previous_version=$(echo $response | grep -oP '"releases":\{"\K[^"]+' | sort -rV | head -n 1)
           if [ -z "$latest_previous_version" ]; then
             echo "Package not found on PyPI."
