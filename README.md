@@ -8,7 +8,7 @@ squarem-JAXopt is an implementation of the SQUAREM accelerator for solving fixed
 ## Installation
 
 ```bash
-pip install squarem-JAXopt
+pip install squarem-jaxopt
 ```
 
 ## Usage
