@@ -31,7 +31,7 @@ a = random.uniform(random.PRNGKey(111), (N, 1))
 b = random.uniform(random.PRNGKey(112), (1, 1))
 
 
-def fun(x: jnp.ndarray) -> jnp.ndarray:
+def fun(x: jax.Array) -> jax.Array:
     y = a + x @ b
     return y
 
