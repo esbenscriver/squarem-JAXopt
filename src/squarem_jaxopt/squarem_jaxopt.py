@@ -1,4 +1,9 @@
-"""Implementation of the SQUAREM accelerator method in JAXopt."""
+"""Implementation of the SQUAREM accelerator method in JAXopt.
+
+References:
+Du, Y., & Varadhan, R. (2020). SQUAREM: An R Package for Off-the-Shelf Acceleration of EM, MM and Other EM-Like Monotone Algorithms. Journal of Statistical Software, 92(7), 1–41. https://doi.org/10.18637/jss.v092.i07.
+Blondel, M., Berthet, Q., Cuturi, M., Frostig, R., Hoyer, S., Llinares-López, F., Pedregosa, F., & Vert, J.-P. (2021). Efficient and Modular Implicit Differentiation. arXiv. https://arxiv.org/abs/2105.15183.
+"""
 
 from typing import Any
 from typing import Callable
