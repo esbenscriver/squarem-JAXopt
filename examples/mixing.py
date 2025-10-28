@@ -12,7 +12,7 @@ maxiter = 1_000
 
 N = 10
 
-a = random.uniform(random.PRNGKey(111), (N, ))
+a = random.uniform(random.PRNGKey(111), (N,))
 
 
 def fun(xy: jax.Array) -> jax.Array:
