@@ -36,7 +36,8 @@ class SquaremState(NamedTuple):
 
 @dataclass(eq=False)
 class SquaremAcceleration(base.IterativeSolver):
-    """SQUAREM accelerator method.
+    """SQUAREM accelerator method for solving fixed-points.
+
     Attributes:
       fixed_point_fun: a function ``fixed_point_fun(x, *args, **kwargs)``
         returning a pytree with the same structure and type as x
@@ -96,7 +97,7 @@ class SquaremAcceleration(base.IterativeSolver):
             ``fixed_point_fun``.
 
         Returns:
-            step_next (OptStep): updated states
+          (next_params, aux)
         """
         params1 = self._fun(params, *args, **kwargs)[0]
         params2 = self._fun(params1, *args, **kwargs)[0]
