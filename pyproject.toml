@@ -37,3 +37,8 @@ dev = [
     "pytest>=8.4.2",
     "ruff>=0.12.12",
 ]
+docs = [
+    "sphinx>=7.0.0",
+    "sphinx-rtd-theme>=2.0.0",
+    "sphinx-autodoc-typehints>=1.25.0",
+]
