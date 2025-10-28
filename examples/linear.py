@@ -19,11 +19,13 @@ def fun(x: jax.Array) -> jax.Array:
     return y
 
 
+initial_guess = jnp.zeros_like(a)
+
 fxp_none = FixedPointIteration(fixed_point_fun=fun, verbose=True)
-result_none = fxp_none.run(jnp.zeros_like(a))
+result_none = fxp_none.run(initial_guess)
 
 fxp_anderson = AndersonAcceleration(fixed_point_fun=fun, verbose=True)
-result_anderson = fxp_anderson.run(jnp.zeros_like(a))
+result_anderson = fxp_anderson.run(initial_guess)
 
 fxp_squarem = SquaremAcceleration(fixed_point_fun=fun, verbose=True)
-result_squarem = fxp_squarem.run(jnp.zeros_like(a))
+result_squarem = fxp_squarem.run(initial_guess)
