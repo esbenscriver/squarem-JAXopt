@@ -1,21 +1,12 @@
-API Reference
+squarem-JAXopt
 =============
 
-This page contains the API documentation for the squarem-jaxopt package.
+This page contains the API documentation for squarem-JAXopt.
 
 SquaremAcceleration
 -------------------
 
 .. autoclass:: squarem_jaxopt.SquaremAcceleration
-   :members:
-   :undoc-members:
-   :show-inheritance:
-   :special-members: __init__
-
-SquaremState
-------------
-
-.. autoclass:: squarem_jaxopt.SquaremState
-   :members:
-   :undoc-members:
+   :members: run
+   :exclude-members: init_state, squarem_step, update, optimality_fun, __post_init__
    :show-inheritance:
