@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "squarem-jaxopt"
-version = "0.1.3"
+version = "0.1.4"
 description = "SQUAREM accelerator for JAXopt solvers"
 authors = [
     { name="Esben Scriver Andersen", email="esbenscriver@gmail.com" }
