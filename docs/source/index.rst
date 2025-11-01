@@ -1,4 +1,4 @@
-squarem-jaxopt
+squarem-JAXopt
 ==============
 
 `JAX <https://github.com/jax-ml/jax>`_ implementation of the SQUAREM accelerator for solving fixed-point equations, originally proposed by `Du and Varadhan (2020) <https://doi.org/10.18637/jss.v092.i07>`_. 
