@@ -47,8 +47,7 @@ Quick Start
 
    fxp_squarem = SquaremAcceleration(fixed_point_fun=fun, verbose=False)
    result_squarem = fxp_squarem.run(initial_guess)
-
-   # Create comparison table
+   
    print("\n" + "="*60)
    print("ALGORITHM COMPARISON TABLE")
    print("="*60)

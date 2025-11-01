@@ -33,7 +33,6 @@ result_anderson = fxp_anderson.run(initial_guess)
 fxp_squarem = SquaremAcceleration(fixed_point_fun=fun, maxiter=maxiter, verbose=False)
 result_squarem = fxp_squarem.run(initial_guess)
 
-# Create comparison table
 print("\n" + "=" * 60)
 print("ALGORITHM COMPARISON TABLE")
 print("=" * 60)
