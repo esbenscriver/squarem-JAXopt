@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>squarem-JAXopt &mdash; squarem-JAXopt 0.1.3 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=360bc84d"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=30646c52"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="squarem-JAXopt" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            squarem-JAXopt
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">squarem-JAXopt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#squaremacceleration">SquaremAcceleration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.fixed_point_fun"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.fixed_point_fun</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.maxiter"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.maxiter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.tol"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.tol</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.has_aux"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.has_aux</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.verbose"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.verbose</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.implicit_diff"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.implicit_diff</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.implicit_diff_solve"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.implicit_diff_solve</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.jit"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.jit</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squarem_jaxopt.SquaremAcceleration.unroll"><code class="docutils literal notranslate"><span class="pre">SquaremAcceleration.unroll</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">squarem-JAXopt</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">squarem-JAXopt</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="squarem-jaxopt">
+<h1>squarem-JAXopt<a class="headerlink" href="#squarem-jaxopt" title="Link to this heading"></a></h1>
+<p>This page contains the API documentation for squarem-JAXopt.</p>
+<section id="squaremacceleration">
+<h2>SquaremAcceleration<a class="headerlink" href="#squaremacceleration" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">squarem_jaxopt.</span></span><span class="sig-name descname"><span class="pre">SquaremAcceleration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fixed_point_fun</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_aux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">implicit_diff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">implicit_diff_solve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unroll</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/squarem_jaxopt/squarem_jaxopt.html#SquaremAcceleration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration" title="Link to this definition"></a></dt>
+<dd><p>SQUAREM accelerator method for solving fixed-points.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.fixed_point_fun">
+<span class="sig-name descname"><span class="pre">fixed_point_fun</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.fixed_point_fun" title="Link to this definition"></a></dt>
+<dd><p>a function <code class="docutils literal notranslate"><span class="pre">fixed_point_fun(x,</span> <span class="pre">*args,</span> <span class="pre">**kwargs)</span></code>
+returning a pytree with the same structure and type as x
+The function should fulfill the Banach fixed-point theorem’s assumptions.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.maxiter">
+<span class="sig-name descname"><span class="pre">maxiter</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.maxiter" title="Link to this definition"></a></dt>
+<dd><p>maximum number of iterations.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.tol">
+<span class="sig-name descname"><span class="pre">tol</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.tol" title="Link to this definition"></a></dt>
+<dd><p>tolerance (stopping criterion)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.has_aux">
+<span class="sig-name descname"><span class="pre">has_aux</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.has_aux" title="Link to this definition"></a></dt>
+<dd><p>wether fixed_point_fun returns additional data. (default: False)
+if True, the fixed is computed only with respect to first element of the
+sequence returned. Other elements are carried during computation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.verbose">
+<span class="sig-name descname"><span class="pre">verbose</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.verbose" title="Link to this definition"></a></dt>
+<dd><p>whether to print information on every iteration or not.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.implicit_diff">
+<span class="sig-name descname"><span class="pre">implicit_diff</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.implicit_diff" title="Link to this definition"></a></dt>
+<dd><p>whether to enable implicit diff or autodiff of unrolled
+iterations.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.implicit_diff_solve">
+<span class="sig-name descname"><span class="pre">implicit_diff_solve</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.implicit_diff_solve" title="Link to this definition"></a></dt>
+<dd><p>the linear system solver to use.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.jit">
+<span class="sig-name descname"><span class="pre">jit</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.jit" title="Link to this definition"></a></dt>
+<dd><p>whether to JIT-compile the optimization loop (default: True).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="squarem_jaxopt.SquaremAcceleration.unroll">
+<span class="sig-name descname"><span class="pre">unroll</span></span><a class="headerlink" href="#squarem_jaxopt.SquaremAcceleration.unroll" title="Link to this definition"></a></dt>
+<dd><p>whether to unroll the optimization loop (default: “auto”)</p>
+</dd></dl>
+
+<p class="rubric">References</p>
+<p><a class="reference external" href="https://doi.org/10.18637/jss.v092.i07">https://doi.org/10.18637/jss.v092.i07</a></p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="squarem-JAXopt" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Esben Scriver Andersen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
